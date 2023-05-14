@@ -1,24 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <ul>
-     <!-- <li><a href="default.asp">Home</a></li> -->
-        <li><a href="Info.asp">News</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
-      </ul>
-      <link rel="stylesheet" href="style.css">
+<html lang="en"><title>Hotel Name Fancy Ting</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+
+<header>
     <h1>HOTEL NAME FANCY TING</h1>
     <h2>kul motivasjons logo, make your dreams come true</h2>
     <button class="knapper" id="knappp">explore new worlds</button>
-    <p>dorem ipsum dolor</p>
+</header>
 
+<main>
+    <section class="reservation-form">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="checkin">Check-In Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-Out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section>
+        <!-- Here you can add the big spaces for pictures in the center of the web -->
+    </section>
+</main>
+
+<footer>
+    <!-- Here you can add the footer information -->
+</footer>
 </body>
 </html>

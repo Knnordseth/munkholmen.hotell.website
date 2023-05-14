@@ -7,3 +7,135 @@ h1  {
 align-items: center; 
 align-content: center;   
 }
+
+/* Body */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #444;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    color: #000;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Reservation Form */
+  .reservation-form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .reservation-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .reservation-form input[type="text"],
+  .reservation-form input[type="email"],
+  .reservation-form input[type="tel"],
+  .reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .reservation-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('arrow.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 20px;
+  }
+  
+  .reservation-form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .reservation-form button:hover {
+    background-color: #444;
+  }
+ 
+  
+  /* Database Communication
+  <?php
+    $servername = "localhost";
+    $username = "username";
+    $password = "password";
+    $dbname = "myDB";
+  
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+  
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+  
+    // SQL query to insert data into the database
+    $sql = "INSERT INTO customers (name, email, phone)
+    VALUES ('John Doe', 'johndoe@example.com', '123456789')";
+  
+    if ($conn->query($sql) === TRUE) {
+      echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+  
+    $conn->close();
+  ?>
+    */
