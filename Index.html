@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-</head>
+<script src="js.js"></script>
 <body>
 <nav>
     <ul>
@@ -15,28 +15,35 @@
 </nav>
 
 <header>
-    <h1>HOTEL NAME FANCY TING</h1>
-    <h2>kul motivasjons logo, make your dreams come true</h2>
-    <button class="knapper" id="knappp">explore new worlds</button>
-</header>
 
+</header>
 <main>
+
+    <div class="container">
+
+        <h1>MUNKHOLMEN HOTEL</h1>
+        <h2> For the Rich, By the rich</h2>
+        <button class="knapper" id="knappp">Visit Today</button>
+        <p> </p>
+    </div>
+
+
     <section class="reservation-form">
         <form>
-            <label for="name">Name:</label>
+            <!-- <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required> -->
 
             <label for="checkin">Check-In Date:</label>
-            <input type="date" id="checkin" name="checkin" required>
+            <input type="date" id="checkin" name="checkin">
 
             <label for="checkout">Check-Out Date:</label>
-            <input type="date" id="checkout" name="checkout" required>
+            <input type="date" id="checkout" name="checkout">
 
             <label for="room-type">Room Type:</label>
             <select id="room-type" name="room-type">
@@ -44,11 +51,17 @@
                 <option value="double">Double</option>
                 <option value="suite">Suite</option>
             </select>
+            
+            <form id="redirectForm" action="form.html" method="GET">
+                <input type="hidden" name="redirect" value="true">
+              </form>
 
-            <button type="submit">Book Now</button>
+
+
+            <button onclick="redirectToForm()">Book Now</button>
         </form>
     </section>
-
+    <img src="" alt="">
     <section>
         <!-- Here you can add the big spaces for pictures in the center of the web -->
     </section>
